@@ -34,4 +34,14 @@ public class TestSeleniumTestNG {
 		System.out.println(modifiedUrl);
 		Assert.assertEquals(modifiedUrl, "https://www.amazon.com/ap/signin");
 	}
+	
+	@Test
+	public void anothertest() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
 }

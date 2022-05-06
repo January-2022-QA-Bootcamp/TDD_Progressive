@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[11419 : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//*[@name='ZipCode'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//input[@name='qsButton'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[John : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+    </line>
+    <line>
+      <![CDATA[H : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9198" started-at="2022-05-04T22:02:09 EDT" finished-at="2022-05-04T22:02:19 EDT">
+  <suite name="Default suite" duration-ms="11934" started-at="2022-05-05T22:55:57 EDT" finished-at="2022-05-05T22:56:09 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9198" started-at="2022-05-04T22:02:09 EDT" finished-at="2022-05-04T22:02:19 EDT">
-      <class name="testPackage.TestAmazonMusic">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testPackage.TestAmazonMusic@12c8a2c0]" name="setUp" is-config="true" duration-ms="5672" started-at="2022-05-04T22:02:09 EDT" finished-at="2022-05-04T22:02:15 EDT">
+    <test name="Default test" duration-ms="11934" started-at="2022-05-05T22:55:57 EDT" finished-at="2022-05-05T22:56:09 EDT">
+      <class name="progresive.qa.test.auto.AutoTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progresive.qa.test.auto.AutoTest@12c8a2c0]" name="setUp" is-config="true" duration-ms="5463" started-at="2022-05-05T22:55:57 EDT" finished-at="2022-05-05T22:56:03 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="aTestMethod()[pri:0, instance:testPackage.TestAmazonMusic@12c8a2c0]" name="aTestMethod" duration-ms="2742" started-at="2022-05-04T22:02:15 EDT" finished-at="2022-05-04T22:02:18 EDT">
+        <test-method status="PASS" signature="autoTest()[pri:0, instance:progresive.qa.test.auto.AutoTest@12c8a2c0]" name="autoTest" duration-ms="6418" started-at="2022-05-05T22:56:03 EDT" finished-at="2022-05-05T22:56:09 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[11419 : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//*[@name='ZipCode'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> xpath: (//input[@name='qsButton'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[John : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+            </line>
+            <line>
+              <![CDATA[H : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (defb987c974e89a0f4b6be2a0ecd8bbf)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- aTestMethod -->
-        <test-method status="PASS" signature="cleaningUp()[pri:0, instance:testPackage.TestAmazonMusic@12c8a2c0]" name="cleaningUp" is-config="true" duration-ms="734" started-at="2022-05-04T22:02:18 EDT" finished-at="2022-05-04T22:02:19 EDT">
+        </test-method> <!-- autoTest -->
+        <test-method status="PASS" signature="cleaningUp()[pri:0, instance:progresive.qa.test.auto.AutoTest@12c8a2c0]" name="cleaningUp" is-config="true" duration-ms="0" started-at="2022-05-05T22:56:09 EDT" finished-at="2022-05-05T22:56:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleaningUp -->
-      </class> <!-- testPackage.TestAmazonMusic -->
+      </class> <!-- progresive.qa.test.auto.AutoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

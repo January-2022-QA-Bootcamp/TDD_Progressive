@@ -3,7 +3,7 @@ package testPackage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
+import amazon.test.BaseClass;
 
 public class TestAmazonMusic extends BaseClass{
 

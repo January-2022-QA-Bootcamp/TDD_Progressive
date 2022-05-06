@@ -1,16 +1,16 @@
-package objects;
+package amazon.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPage {
+public class SignInPage {
 
-	public MainPage(WebDriver driver) {
+	public SignInPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[text()='Music']")
-	public WebElement musicTabElement;
+	@FindBy(tagName = "h1")
+	public WebElement titleElement;
 }

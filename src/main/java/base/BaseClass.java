@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import commons.CommonActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.LandingPage;
-import objects.StartPage;
+import objects.StartPersonalDetailsPage;
 import objects.ZipCodePage;
 
 public class BaseClass {
@@ -18,7 +18,8 @@ public class BaseClass {
 	protected LandingPage landingPage;
 	protected CommonActions commonActions;
 	protected ZipCodePage zipCodePage;
-	protected StartPage startPage;
+	protected StartPersonalDetailsPage startPersonalDetailsPage;
+	
 	
 	@BeforeMethod
 	public void setUp() {
@@ -40,7 +41,7 @@ public class BaseClass {
 		commonActions = new CommonActions();
 		landingPage = new LandingPage(driver);
 		zipCodePage = new ZipCodePage(driver);
-		startPage = new StartPage(driver);
+		startPersonalDetailsPage = new StartPersonalDetailsPage(driver);
 	}
 	
 }

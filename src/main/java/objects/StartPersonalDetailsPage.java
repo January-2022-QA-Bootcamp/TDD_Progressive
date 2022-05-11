@@ -36,6 +36,7 @@ public class StartPersonalDetailsPage {
 	//@FindBy(xpath = "(//div[contains(.,'Required to continue')])[4]")
 	//WebElement reuiredErrorMsgElement;
 	By reuiredErrorMsgBy = By.xpath("(//div[contains(.,'Required to continue')])[4]");
+	By requiredErrorMsgCityBy = By.xpath("(//div[contains(.,'Required to continue')])[5]");
 	
 	public void inputFirstName(CommonActions commonActions, String firstName) {
 		commonActions.inputText(firstNameInputElement, firstName);
@@ -91,11 +92,18 @@ public class StartPersonalDetailsPage {
 		commonActions.click(startMyQuotElement);
 	}
 	
-	public void fixError(CommonActions commonActions, String address) {
+	public void fixError(CommonActions commonActions, String address, String city) {
 		boolean isErrorPresent = commonActions.isPresent(reuiredErrorMsgBy);
 		if(isErrorPresent && commonActions.getUrl().equalsIgnoreCase("https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit")) {
 			inputAddress(commonActions, address);
+			
+			boolean isCityErrorPresent = commonActions.isPresent(requiredErrorMsgCityBy);
+			if(isCityErrorPresent) {
+				inputCity(commonActions, city);
+			}
+			
 			clickStartMyQuote(commonActions);
 		}
+
 	}
 }

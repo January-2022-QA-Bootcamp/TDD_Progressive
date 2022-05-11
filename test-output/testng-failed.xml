@@ -6,8 +6,8 @@
       <class name="progresive.qa.test.auto.AutoTest">
         <methods>
           <include name="cleaningUp"/>
+          <include name="autoTestJeep"/>
           <include name="setUp"/>
-          <include name="autoTest"/>
         </methods>
       </class> <!-- progresive.qa.test.auto.AutoTest -->
     </classes>

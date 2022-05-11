@@ -65,10 +65,11 @@ public class CommonActions {
 	
 	public void selectByValue(WebElement element, String value) {
 		try {
+			sleep(0.5);
 			Select select = new Select(element);
 			select.selectByValue(value);
 			Reporter.log(value +" : value has been selected from the element : " + element + "<br>");
-		}catch (Exception e) {
+		}catch (Throwable e) {
 			e.printStackTrace();
 			Reporter.log("Locator doesn't match for : " + element+"\n" + e.getMessage() + "<br>");
 			Assert.fail();
@@ -93,9 +94,9 @@ public class CommonActions {
 		return status;
 	}
 	
-	public void sleep(int seconds) {
+	public void sleep(double seconds) {
 		try {
-			Thread.sleep(seconds * 1000);
+			Thread.sleep((long) (seconds * 1000));
 			Reporter.log("Sleeping for : " + seconds + " seconds zZzz.." + "<br>");
 		}catch (Throwable e) {
 			e.printStackTrace();

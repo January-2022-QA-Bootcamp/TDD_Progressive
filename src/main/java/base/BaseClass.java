@@ -10,6 +10,7 @@ import commons.CommonActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.LandingPage;
 import objects.StartPersonalDetailsPage;
+import objects.VehicleDetailsPage;
 import objects.ZipCodePage;
 
 public class BaseClass {
@@ -19,6 +20,7 @@ public class BaseClass {
 	protected CommonActions commonActions;
 	protected ZipCodePage zipCodePage;
 	protected StartPersonalDetailsPage startPersonalDetailsPage;
+	protected VehicleDetailsPage vehicleDetailsPage;
 	
 	
 	@BeforeMethod
@@ -42,6 +44,7 @@ public class BaseClass {
 		landingPage = new LandingPage(driver);
 		zipCodePage = new ZipCodePage(driver);
 		startPersonalDetailsPage = new StartPersonalDetailsPage(driver);
+		vehicleDetailsPage = new VehicleDetailsPage(driver);
 	}
 	
 }

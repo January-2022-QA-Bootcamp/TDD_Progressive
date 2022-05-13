@@ -17,7 +17,11 @@ public class LandingPage {
 	
 	//WebElement autoElement = BaseClass.driver.findElement(By.xpath("(//p[contains(text(),'Auto')])[1]"));
 	
-	public void clickAuto(CommonActions commonActions) {
+	private void clickAuto(CommonActions commonActions) {
 		commonActions.click(autoElement);
+	}
+	
+	public void landingPageSteps(CommonActions commonActions) {
+		clickAuto(commonActions);
 	}
 }

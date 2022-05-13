@@ -23,7 +23,7 @@ public class ZipCodePage {
 	WebElement altGetQuoteBtnElement;
 	
 	
-	public void inputZipCode(CommonActions commonActions, String value) {
+	private void inputZipCode(CommonActions commonActions, String value) {
 		if(whichUrl(commonActions).equalsIgnoreCase("https://www.progressive.com/#s")) {
 			commonActions.inputText(altZipCodeElement, value);
 		}else {
@@ -31,7 +31,7 @@ public class ZipCodePage {
 		}
 	}
 	
-	public void clickQuoteBtn(CommonActions commonActions) {
+	private void clickQuoteBtn(CommonActions commonActions) {
 		if(whichUrl(commonActions).equalsIgnoreCase("https://www.progressive.com/#s")) {
 			commonActions.click(altGetQuoteBtnElement);
 		}else {
@@ -41,5 +41,10 @@ public class ZipCodePage {
 	
 	private String whichUrl(CommonActions commonActions) {
 		return commonActions.getUrl();
+	}
+	
+	public void zipCodePageSteps(CommonActions commonActions, String zip) {
+		inputZipCode(commonActions, zip);
+		clickQuoteBtn(commonActions);
 	}
 }

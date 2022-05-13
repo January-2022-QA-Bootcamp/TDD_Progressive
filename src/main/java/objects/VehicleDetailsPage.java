@@ -11,7 +11,7 @@ public class VehicleDetailsPage {
 	public VehicleDetailsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(id = "VehiclesNew_embedded_questions_list_Year")
 	WebElement yearSelectionElement;
 	@FindBy(id = "VehiclesNew_embedded_questions_list_Make")
@@ -38,66 +38,86 @@ public class VehicleDetailsPage {
 	WebElement doneBtnElement;
 	@FindBy(xpath = "//button[text()='Continue']")
 	WebElement continueBtnElement;
-	
-	public void selectVehicleYear(CommonActions commonActions, String year) {
+
+	private void selectVehicleYear(CommonActions commonActions, String year) {
 		commonActions.selectByValue(yearSelectionElement, year);
 	}
-	
-	public void selectVehicleMake(CommonActions commonActions, String make) {
+
+	private void selectVehicleMake(CommonActions commonActions, String make) {
 		commonActions.selectByValue(makeSelectionElement, make);
 	}
-	
-	public void selectVehicleModel(CommonActions commonActions, String model) {
+
+	private void selectVehicleModel(CommonActions commonActions, String model) {
 		commonActions.selectByValue(modelSelectionElement, model);
 	}
-	
-	public void selectVehicleBodyType(CommonActions commonActions, String bodyType) {
-		if(bodyType!=null) {
+
+	private void selectVehicleBodyType(CommonActions commonActions, String bodyType) {
+		if (bodyType != null && bodyType.length() > 1) {
 			commonActions.selectByValue(bodyTypeSelectionElement, bodyType);
 		}
 	}
-	
-	public void selectVehiclePrimaryUse(CommonActions commonActions, String primaryUse) {
+
+	private void selectVehiclePrimaryUse(CommonActions commonActions, String primaryUse) {
 		commonActions.selectByValue(primaryUseElement, primaryUse);
 	}
-	
-	public void checkRideShare(CommonActions commonActions, boolean isVehicleUseForRideShare) {
+
+	private void checkRideShare(CommonActions commonActions, boolean isVehicleUseForRideShare) {
 		boolean status = commonActions.isSelected(rideShareCheckElement);
-		if(!status && isVehicleUseForRideShare) {
+		if (!status && isVehicleUseForRideShare) {
 			commonActions.click(rideShareCheckElement);
-		}else if(status) {
-			commonActions.logEventAndFail("Deafult status of "+ rideShareCheckElement + " : is selected");
+		} else if (status) {
+			commonActions.logEventAndFail("Deafult status of " + rideShareCheckElement + " : is selected");
 		}
 	}
-	
-	public void selectVehicleOwnOrLease(CommonActions commonActions, String ownOrLease) {
+
+	private void selectVehicleOwnOrLease(CommonActions commonActions, String ownOrLease) {
 		commonActions.selectByValue(ownOrLeasElement, ownOrLease);
 	}
-	
-	public void selectVehicleOwnedDuration(CommonActions commonActions, String duration) {
+
+	private void selectVehicleOwnedDuration(CommonActions commonActions, String duration) {
 		commonActions.selectByValue(ownedVehicleDurationElement, duration);
 	}
-	
-	public void selectVehicleAlarmType(CommonActions commonActions, String alarmType) {
+
+	private void selectVehicleAlarmType(CommonActions commonActions, String alarmType) {
 		commonActions.selectByValue(securityAlarmElement, alarmType);
 	}
-	
-	public void checkVehicleDaytimeLamp(CommonActions commonActions, boolean isDayTimeLamp) {
-		boolean status = commonActions.isSelected(dayTimeLampYElement);
-		if(status && isDayTimeLamp) {
-		//	commonActions.click(dayTimeLampYElement);
-		}else if(status && !isDayTimeLamp){
-			commonActions.click(dayTimeLampNElement);
-		}else {
-			commonActions.logEventAndFail("Daytime Lamp is not in selected status");
+
+	private void checkVehicleDaytimeLamp(CommonActions commonActions, boolean isPresent, boolean isDayTimeLamp) {
+		if (isPresent) {
+			boolean status = commonActions.isSelected(dayTimeLampYElement);
+			if (status && isDayTimeLamp) {
+				// commonActions.click(dayTimeLampYElement);
+			} else if (status && !isDayTimeLamp) {
+				commonActions.click(dayTimeLampNElement);
+			} else {
+				commonActions.logEventAndFail("Daytime Lamp is not in selected status");
+			}
 		}
 	}
-	
-	public void clickDoneBtn(CommonActions commonActions) {
+
+	private void clickDoneBtn(CommonActions commonActions) {
 		commonActions.click(doneBtnElement);
 	}
-	
-	public void clickContinueBtn(CommonActions commonActions) {
+
+	private void clickContinueBtn(CommonActions commonActions) {
 		commonActions.click(continueBtnElement);
+	}
+
+	public void vehicleDetailsPageSteps(CommonActions commonActions, String vehicleYear, String vehicleMake,
+			String vehicleModel, String bodyType, String primaryUse, boolean isRideShare, String ownOrLease,
+			String ownedDuration, String alarmType,boolean isEnable, boolean isDayLightLamp) {
+
+		selectVehicleYear(commonActions, vehicleYear);
+		selectVehicleMake(commonActions, vehicleMake);
+		selectVehicleModel(commonActions, vehicleModel);
+		selectVehicleBodyType(commonActions, bodyType);
+		selectVehiclePrimaryUse(commonActions, primaryUse);
+		checkRideShare(commonActions, isRideShare);
+		selectVehicleOwnOrLease(commonActions, ownOrLease);
+		selectVehicleOwnedDuration(commonActions, ownedDuration);
+		selectVehicleAlarmType(commonActions, alarmType);
+		checkVehicleDaytimeLamp(commonActions, isEnable, isDayLightLamp);
+		clickDoneBtn(commonActions);
+		clickContinueBtn(commonActions);
 	}
 }

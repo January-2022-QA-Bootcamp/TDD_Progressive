@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\mdnas\AppData\Local\Temp\testng-eclipse--463412807\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\mdnas\eclipse-workspace\com.progressive.2022\RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="progresive.qa.test.auto.AutoTest" hash-for-method="autoTestJeep">autoTestJeep</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestRobust" hash-for-method="bmwTest">bmwTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,69 +118,104 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">progresive.qa.test.auto.AutoTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">progresive.qa.test.auto.AutoTestRobust</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="autoTestJeep">
-                  </a> <!-- autoTestJeep -->
-                  <span class="method-name">autoTestJeep</span>
+                  <a name="bmwTest">
+                  </a> <!-- bmwTest -->
+                  <span class="method-name">bmwTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at progresive.qa.test.auto.AutoTestRobust.bmwTest(AutoTestRobust.java:11)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mdnas\AppData\Local\Temp\testng-eclipse--463412807\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mdnas\eclipse-workspace\com.progressive.2022\RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegressionTest&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;progresive.qa.test.auto.AutoTest&quot;/&gt;
+      &lt;class name=&quot;progresive.qa.test.auto.AutoTestRobust&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- RegressionTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">RegressionTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">auto</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bmwTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bmwTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bmwTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -188,105 +223,62 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'autoTestJeep')
-data.setCell(0, 2, 'progresive.qa.test.auto.AutoTest')
-data.setCell(0, 3, 36744);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'bmwTest')
+data.setCell(0, 2, 'progresive.qa.test.auto.AutoTestRobust')
+data.setCell(0, 3, 13);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 13 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">autoTestJeep</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">11419 : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> xpath: (//*[@name='ZipCode'])[1]]<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> xpath: (//input[@name='qsButton'])[1]]<br></span>
-                <span class="reporter-method-output">John : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br></span>
-                <span class="reporter-method-output">H : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br></span>
-                <span class="reporter-method-output">Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br></span>
-                <span class="reporter-method-output">06/07/1977 : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br></span>
-                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
-                <span class="reporter-method-output">Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> tag name: checkbox-input]<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br></span>
-                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
-                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_Year]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_Make]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_Model]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br></span>
-                <span class="reporter-method-output">Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (ca9c9143c1db4fd10745de683b6d15f1)] -> xpath: //button[text()='Continue']]<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">progresive.qa.test.auto.AutoTestRobust</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">jeepTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">progresive.qa.test.auto.AutoTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">autoTestBmw</span>
                 <br/>
+                <span class="ignored-method-name">autoTestJeep</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">progresive.qa.test.auto.AutoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">progresive.qa.test.auto.AutoTestRobust</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">autoTestJeep</span>
-                <span class="method-start">5252 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bmwTest</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleaningUp</span>
-                <span class="method-start">41999 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

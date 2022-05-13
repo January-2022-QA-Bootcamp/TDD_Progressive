@@ -3,13 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="progresive.qa.test.auto.AutoTest">
+      <class name="progresive.qa.test.auto.AutoTestRobust">
         <methods>
+          <include name="beforeSuite"/>
           <include name="cleaningUp"/>
-          <include name="autoTestJeep"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
           <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="bmwTest"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- progresive.qa.test.auto.AutoTest -->
+      </class> <!-- progresive.qa.test.auto.AutoTestRobust -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

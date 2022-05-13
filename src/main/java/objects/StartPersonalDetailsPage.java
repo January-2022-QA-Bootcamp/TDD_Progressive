@@ -38,42 +38,42 @@ public class StartPersonalDetailsPage {
 	By requiredErrorMsgAddressBy = By.xpath("(//div[contains(.,'Required to continue')])[4]");
 	By requiredErrorMsgCityBy = By.xpath("(//div[contains(.,'Required to continue')])[5]");
 	
-	public void inputFirstName(CommonActions commonActions, String firstName) {
+	private void inputFirstName(CommonActions commonActions, String firstName) {
 		commonActions.inputText(firstNameInputElement, firstName);
 	}
 	
-	public void inputMiddleName(CommonActions commonActions, char middleName) {
+	private void inputMiddleName(CommonActions commonActions, char middleName) {
 		commonActions.inputText(middleNameInputElement, middleName);
 	}
 	
-	public void inputLastName(CommonActions commonActions, String lastName) {
+	private void inputLastName(CommonActions commonActions, String lastName) {
 		commonActions.inputText(lastNameInputElement, lastName);
 	}
 	
-	public void selectSuffix(CommonActions commonActions, String suffix) {
+	private void selectSuffix(CommonActions commonActions, String suffix) {
 		commonActions.selectByValue(suffixElement, suffix);
 	}
 	
-	public void inputDOB(CommonActions commonActions, String dobString) {
+	private void inputDOB(CommonActions commonActions, String dobString) {
 		commonActions.inputText(dOBElement, dobString);
 	}
 	
-	public void inputAddress(CommonActions commonActions, String address) {
+	private void inputAddress(CommonActions commonActions, String address) {
 		//commonActions.sleep(3);
 		//commonActions.click(streetAddressElement);
 		commonActions.inputText(streetAddressElement, address);
 		//commonActions.inputUsingJSXforIdLocator(streetAddressElement.getAttribute("id"), address);
 	}
 	
-	public void inputAptNo(CommonActions commonActions, String aptNo) {
+	private void inputAptNo(CommonActions commonActions, String aptNo) {
 		commonActions.inputText(aptNoElement, aptNo);
 	}
 	
-	public void inputCity(CommonActions commonActions, String cityName) {
+	private void inputCity(CommonActions commonActions, String cityName) {
 		commonActions.inputText(cityElement, cityName);
 	}
 	
-	public void checkPOBoxorMilitary(CommonActions commonActions, boolean isPOBox) {
+	private void checkPOBoxorMilitary(CommonActions commonActions, boolean isPOBox) {
 		boolean statusOfElement = commonActions.isSelected(checkboxElement);
 		if(!statusOfElement && isPOBox) {
 			commonActions.click(checkboxElement);
@@ -82,20 +82,21 @@ public class StartPersonalDetailsPage {
 			/*
 				commonActions.logEvent("Element is selected");
 				Assert.fail();
-				Using these two liners from common actions, so in case other steps need to resuse it
+				Using these two liners from common actions, so in case other steps need to reuse it
 				Purpose of common actions class is to resuse all events again for all test steps 
 			 */
 		}
 	}
 	
-	public void clickStartMyQuote(CommonActions commonActions) {
+	private void clickStartMyQuote(CommonActions commonActions) {
 		commonActions.click(startMyQuotElement);
 	}
 	
-	public void fixError(CommonActions commonActions, String address, String city) {
+	private void fixError(CommonActions commonActions, String address, String city, String aptNo) {
 		boolean isErrorPresent = commonActions.isPresent(requiredErrorMsgAddressBy);
 		if(isErrorPresent && commonActions.getUrl().equalsIgnoreCase("https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit")) {
 			inputAddress(commonActions, address);
+			inputAptNo(commonActions, aptNo);
 		}
 		
 		boolean isCityErrorPresent = commonActions.isPresent(requiredErrorMsgCityBy);
@@ -106,5 +107,21 @@ public class StartPersonalDetailsPage {
 		if(commonActions.getUrl().equalsIgnoreCase("https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit")) {
 			clickStartMyQuote(commonActions);
 		}
+	}
+	
+	public void startPersonalDetailsPageSteps(CommonActions commonActions, String firstName, char middleName, String lastName, String suffix, String dob, String address,
+			String aptNo, String city, boolean isPOBox) {
+		
+		inputFirstName(commonActions, firstName);
+		inputMiddleName(commonActions, middleName);
+		inputLastName(commonActions, lastName);
+		selectSuffix(commonActions, suffix);
+		inputDOB(commonActions, dob);
+		inputAddress(commonActions, address);
+		inputAptNo(commonActions, aptNo);
+		inputCity(commonActions, city);
+		checkPOBoxorMilitary(commonActions, isPOBox);
+		clickStartMyQuote(commonActions);
+		fixError(commonActions, address, city, aptNo);
 	}
 }

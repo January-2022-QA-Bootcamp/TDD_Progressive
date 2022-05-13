@@ -4,8 +4,16 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
 import commons.CommonActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.LandingPage;
@@ -22,6 +30,20 @@ public class BaseClass {
 	protected StartPersonalDetailsPage startPersonalDetailsPage;
 	protected VehicleDetailsPage vehicleDetailsPage;
 	
+	@BeforeSuite
+	public void beforeSuite() {
+		Reporter.log("Running our Framework");
+	}
+	
+	@BeforeTest
+	public void beforeTest() {
+		Reporter.log("This is before Test Annotation");
+	}
+	
+	@BeforeClass
+	public void beforeClass() {
+		Reporter.log("Before Class");
+	}
 	
 	@BeforeMethod
 	public void setUp() {
@@ -36,7 +58,22 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void cleaningUp() {
-		//driver.quit();
+		driver.quit();
+	}
+	
+	@AfterClass
+	public void afterClass() {
+		Reporter.log("After Class");
+	}
+	
+	@AfterTest
+	public void afterTest() {
+		Reporter.log("After test");
+	}
+	
+	@AfterSuite
+	public void afterSuite() {
+		Reporter.log("Closing Framework execution");
 	}
 	
 	private void initClasses() {

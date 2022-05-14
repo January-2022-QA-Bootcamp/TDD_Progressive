@@ -5,15 +5,11 @@
     <classes>
       <class name="progresive.qa.test.auto.AutoTestRobust">
         <methods>
-          <include name="beforeSuite"/>
           <include name="cleaningUp"/>
-          <include name="afterClass"/>
-          <include name="beforeTest"/>
           <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
+          <include name="jeepTest"/>
           <include name="bmwTest"/>
-          <include name="beforeClass"/>
+          <include name="dependsOnMethod"/>
         </methods>
       </class> <!-- progresive.qa.test.auto.AutoTestRobust -->
     </classes>

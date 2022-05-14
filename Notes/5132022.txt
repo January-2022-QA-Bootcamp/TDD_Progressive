@@ -1,0 +1,8 @@
+We Covered Today:
+1. testNG annotation
+2. Test attributes
+3. Java Logger to log in console
+4. configure.properties to configure framework outside of code
+5. ReadConfigFile class to read configure.properties file
+6. TestNG parallel execution
+7. TestNG parameter

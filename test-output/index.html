@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-SmokeSuite">
+              <span class="suite-name border-passed">SmokeSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\mdnas\eclipse-workspace\com.progressive.2022\RegressionSuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SmokeSuite">
+                    <span>C:\Users\mdnas\eclipse-workspace\com.progressive.2022\SomokeRunner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-SmokeSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>3 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-SmokeSuite">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" class="navigator-link " panel-name="times-SmokeSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-SmokeSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SmokeSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-SmokeSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SmokeSuite" class="hide-methods passed suite-SmokeSuite"> (hide)</a> <!-- hide-methods passed suite-SmokeSuite -->
+                      <a href="#" panel-name="suite-SmokeSuite" class="show-methods passed suite-SmokeSuite"> (show)</a> <!-- show-methods passed suite-SmokeSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-SmokeSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestRobust" hash-for-method="bmwTest">bmwTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progresive.qa.test.auto.AutoTestRobust" hash-for-method="bmwTest(11413, David)">bmwTest(11413, David)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-SmokeSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,55 +118,54 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+        <div panel-name="suite-SmokeSuite" class="panel SmokeSuite">
+          <div class="suite-SmokeSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">progresive.qa.test.auto.AutoTestRobust</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bmwTest">
-                  </a> <!-- bmwTest -->
+                  <a name="bmwTest(11413, David)">
+                  </a> <!-- bmwTest(11413, David) -->
                   <span class="method-name">bmwTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at progresive.qa.test.auto.AutoTestRobust.bmwTest(AutoTestRobust.java:11)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(11413, David)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-SmokeSuite-class-passed -->
+        </div> <!-- panel SmokeSuite -->
+        <div panel-name="test-xml-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mdnas\eclipse-workspace\com.progressive.2022\RegressionSuite.xml</span>
+            <span class="header-content">C:\Users\mdnas\eclipse-workspace\com.progressive.2022\SomokeRunner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;RegressionTest&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SmokeSuite&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;RegressionTest&quot;&gt;
+    &lt;parameter name=&quot;firstname&quot; value=&quot;David&quot;/&gt;
+    &lt;parameter name=&quot;zipvalue&quot; value=&quot;11413&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;exclude name=&quot;home&quot;/&gt;
+        &lt;exclude name=&quot;jeep&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;progresive.qa.test.auto.AutoTest&quot;/&gt;
+      &lt;class name=&quot;progressive.qa.test.home.HomeTest&quot;/&gt;
       &lt;class name=&quot;progresive.qa.test.auto.AutoTestRobust&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegressionTest --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+&lt;/suite&gt; &lt;!-- SmokeSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for SmokeSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -176,9 +175,9 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for SmokeSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -190,15 +189,7 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">bmwTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
+              <span class="test-group-name">bmw</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">bmwTest</span>
@@ -207,15 +198,15 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for SmokeSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_SmokeSuite');
+function tableData_SmokeSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -225,60 +216,116 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'bmwTest')
 data.setCell(0, 2, 'progresive.qa.test.auto.AutoTestRobust')
-data.setCell(0, 3, 13);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(0, 3, 36957);
+window.suiteTableData['SmokeSuite']= { tableData: data, tableDiv: 'times-div-SmokeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <div id="times-div-SmokeSuite">
+              </div> <!-- times-div-SmokeSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for SmokeSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bmwTest(11413, David)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br></span>
+                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
+                <span class="reporter-method-output">11413 : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> xpath: (//*[@name='ZipCode'])[1]]<br></span>
+                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> xpath: (//input[@name='qsButton'])[1]]<br></span>
+                <span class="reporter-method-output">David : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br></span>
+                <span class="reporter-method-output">H : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br></span>
+                <span class="reporter-method-output">Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br></span>
+                <span class="reporter-method-output">11/04/1987 : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br></span>
+                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
+                <span class="reporter-method-output">2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
+                <span class="reporter-method-output">Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> tag name: checkbox-input] : is Not selected<br></span>
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> tag name: checkbox-input]<br></span>
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> class name: blue]<br></span>
+                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br></span>
+                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
+                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
+                <span class="reporter-method-output">2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
+                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br></span>
+                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> class name: blue]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_Year]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_Make]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_Model]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> tag name: checkbox-input] : is Not selected<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br></span>
+                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
+                <span class="reporter-method-output">5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br></span>
+                <span class="reporter-method-output">Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br></span>
+                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (504ff8d05bd13ce9fc5319493cb31167)] -> xpath: //button[text()='Continue']]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">progresive.qa.test.auto.AutoTestRobust</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">dependsOnMethod</span>
+                <br/>
                 <span class="ignored-method-name">jeepTest</span>
+                <br/>
+                <span class="ignored-method-name">dependsOnGroups</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">progresive.qa.test.auto.AutoTest</span>
+              <span class="ignored-class-name">progressive.qa.test.home.HomeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">autoTestBmw</span>
+                <span class="ignored-method-name">homeTest1</span>
                 <br/>
-                <span class="ignored-method-name">autoTestJeep</span>
+                <span class="ignored-method-name">homeTest2</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">progresive.qa.test.auto.AutoTestRobust</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">bmwTest</span>
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bmwTest(11413, David)</span>
+                <span class="method-start">5501 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">42461 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

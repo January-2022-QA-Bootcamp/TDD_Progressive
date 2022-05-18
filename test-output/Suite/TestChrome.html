@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>TestNG:  TestChrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestChrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 17 23:05:33 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89929 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>auto home </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='progresive.qa.test.auto.AutoTestRobust.dependsOnMethod()'><b>dependsOnMethod</b><br>Test class: progresive.qa.test.auto.AutoTestRobust</td>
+<td></td>
+<td>0</td>
+<td>progresive.qa.test.auto.AutoTestRobust@587c290d</td></tr>
+<tr>
+<td title='progresive.qa.test.auto.AutoTestDataProviderClass.jeepTestWithDataProviderClass()'><b>jeepTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@467b684d<br/>
+<a href="#Output-1324526451" onClick='toggleBox("Output-1324526451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1324526451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1324526451">
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br/>
+Current URL is : https://www.progressive.com/#l<br><br/>
+11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//*[@name='ZipCode'])[1]]<br><br/>
+Current URL is : https://www.progressive.com/#l<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//input[@name='qsButton'])[1]]<br><br/>
+Jenny : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br><br/>
+H : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br><br/>
+Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br><br/>
+11/04/1987 : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br><br/>
+12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
+2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
+Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br><br/>
+[[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input] : is Not selected<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input]<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> class name: blue]<br><br/>
+By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br><br/>
+Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
+12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
+2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
+By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br><br/>
+Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> class name: blue]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Year]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Make]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Model]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br><br/>
+[[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input] : is Not selected<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br><br/>
+Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: //button[text()='Continue']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>progresive.qa.test.auto.AutoTestDataProviderClass@4516af24</td></tr>
+<tr>
+<td title='progresive.qa.test.auto.AutoTestDataProviderClass.jeepTestWithDataProviderClass()'><b>jeepTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@5bb8f9e2<br/>
+<a href="#Output-768795248" onClick='toggleBox("Output-768795248", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-768795248" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-768795248">
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br/>
+Current URL is : https://www.progressive.com/#s<br><br/>
+11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: zipCode_overlay_subproducts]<br><br/>
+Current URL is : https://www.progressive.com/#s<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: qsButton_overlay_subproducts]<br><br/>
+Adam : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br><br/>
+J : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br><br/>
+Obama : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br><br/>
+11/04/1980 : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br><br/>
+12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
+2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
+Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br><br/>
+[[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input] : is Not selected<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input]<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> class name: blue]<br><br/>
+By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br><br/>
+Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
+12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
+2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
+By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br><br/>
+Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> class name: blue]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Year]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Make]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Model]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br><br/>
+[[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input] : is Not selected<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br><br/>
+Sleeping for : 0.5 seconds zZzz..<br><br/>
+5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br><br/>
+Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> xpath: //button[text()='Continue']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>progresive.qa.test.auto.AutoTestDataProviderClass@4516af24</td></tr>
+</table><p>
+</body>
+</html>

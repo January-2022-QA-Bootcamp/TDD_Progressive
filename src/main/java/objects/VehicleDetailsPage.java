@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import commons.CommonActions;
+import dataProvider.AutoData;
 
 public class VehicleDetailsPage {
 
@@ -105,7 +106,7 @@ public class VehicleDetailsPage {
 
 	public void vehicleDetailsPageSteps(CommonActions commonActions, String vehicleYear, String vehicleMake,
 			String vehicleModel, String bodyType, String primaryUse, boolean isRideShare, String ownOrLease,
-			String ownedDuration, String alarmType,boolean isEnable, boolean isDayLightLamp) {
+			String ownedDuration, String alarmType, boolean isEnable, boolean isDayLightLamp) {
 
 		selectVehicleYear(commonActions, vehicleYear);
 		selectVehicleMake(commonActions, vehicleMake);
@@ -117,6 +118,22 @@ public class VehicleDetailsPage {
 		selectVehicleOwnedDuration(commonActions, ownedDuration);
 		selectVehicleAlarmType(commonActions, alarmType);
 		checkVehicleDaytimeLamp(commonActions, isEnable, isDayLightLamp);
+		clickDoneBtn(commonActions);
+		clickContinueBtn(commonActions);
+	}
+	
+	public void vehicleDetailsPageSteps(CommonActions commonActions, AutoData autoData) {
+
+		selectVehicleYear(commonActions, autoData.getvYear());
+		selectVehicleMake(commonActions, autoData.getvMake());
+		selectVehicleModel(commonActions, autoData.getvModel());
+		selectVehicleBodyType(commonActions, autoData.getBodyType());
+		selectVehiclePrimaryUse(commonActions, autoData.getPrimaryUse());
+		checkRideShare(commonActions, autoData.isRideShare());
+		selectVehicleOwnOrLease(commonActions, autoData.getOwnOrLease());
+		selectVehicleOwnedDuration(commonActions, autoData.getOwnedDuration());
+		selectVehicleAlarmType(commonActions, autoData.getAlarmType());
+		checkVehicleDaytimeLamp(commonActions, autoData.isEnable(), autoData.isDayTimeLamp());
 		clickDoneBtn(commonActions);
 		clickContinueBtn(commonActions);
 	}

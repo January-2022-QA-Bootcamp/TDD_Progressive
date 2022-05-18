@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import commons.CommonActions;
+import dataProvider.AutoData;
 
 public class StartPersonalDetailsPage {
 
@@ -123,5 +124,19 @@ public class StartPersonalDetailsPage {
 		checkPOBoxorMilitary(commonActions, isPOBox);
 		clickStartMyQuote(commonActions);
 		fixError(commonActions, address, city, aptNo);
+	}
+	
+	public void startPersonalDetailsPageSteps(CommonActions commonActions, AutoData autoData) {
+		inputFirstName(commonActions, autoData.getFirstName());
+		inputMiddleName(commonActions, autoData.getMiddleName());
+		inputLastName(commonActions, autoData.getLastName());
+		selectSuffix(commonActions, autoData.getSuffix());
+		inputDOB(commonActions, autoData.getDob());
+		inputAddress(commonActions, autoData.getAddress());
+		inputAptNo(commonActions, autoData.getAptNo());
+		inputCity(commonActions, autoData.getCity());
+		checkPOBoxorMilitary(commonActions, autoData.isPOBox());
+		clickStartMyQuote(commonActions);
+		fixError(commonActions, autoData.getAddress(), autoData.getCity(), autoData.getAptNo());
 	}
 }

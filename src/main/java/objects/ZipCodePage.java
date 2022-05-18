@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import commons.CommonActions;
+import dataProvider.AutoData;
 
 public class ZipCodePage {
 
@@ -45,6 +46,11 @@ public class ZipCodePage {
 	
 	public void zipCodePageSteps(CommonActions commonActions, String zip) {
 		inputZipCode(commonActions, zip);
+		clickQuoteBtn(commonActions);
+	}
+	
+	public void zipCodePageSteps(CommonActions commonActions, AutoData autoData) {
+		inputZipCode(commonActions, autoData.getZipCode());
 		clickQuoteBtn(commonActions);
 	}
 }

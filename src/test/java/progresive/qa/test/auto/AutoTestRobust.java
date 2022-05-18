@@ -8,7 +8,7 @@ import base.BaseClass;
 public class AutoTestRobust extends BaseClass{
 	
 	@Parameters({"zipvalue", "firstname"})
-	@Test(enabled = true, groups = {"auto","bmw"})
+	@Test(enabled = false, groups = {"auto","bmw"})
 	public void bmwTest(String zipValue, String firstName) {
 		landingPage.landingPageSteps(commonActions);
 		zipCodePage.zipCodePageSteps(commonActions, zipValue);
@@ -17,6 +17,15 @@ public class AutoTestRobust extends BaseClass{
 		vehicleDetailsPage.vehicleDetailsPageSteps(commonActions, "2022", "BMW", "230", "", "4TNC", false, "3", "E","5",false, false);
 	}
 
+	@Test(enabled = true, groups = {"auto","bmw"})
+	public void bmwTestWithoutParam() {
+		landingPage.landingPageSteps(commonActions);
+		zipCodePage.zipCodePageSteps(commonActions, "11428");
+		startPersonalDetailsPage.startPersonalDetailsPageSteps(commonActions, "Jenny", 'H', "Doe","II", "11/04/1987",
+				"12312 Liberty Avenue", "2B", "Jamaica", true);
+		vehicleDetailsPage.vehicleDetailsPageSteps(commonActions, "2022", "BMW", "230", "", "4TNC", false, "3", "E","5",false, false);
+	}
+	
 	@Test(enabled = true, priority = 1, groups = {"auto","jeep"})
 	public void jeepTest() {
 		landingPage.landingPageSteps(commonActions);

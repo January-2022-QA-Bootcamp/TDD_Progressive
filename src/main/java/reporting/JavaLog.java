@@ -9,6 +9,6 @@ public class JavaLog {
 	
 	public static void log(String msg) {
 		LOGGER.info(msg);
-		Reporter.log(msg);
+		Reporter.log(msg + "<br>");
 	}
 }

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="RegressionTest(failed)" parallel="methods">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="home"/>
+        <exclude name="auto"/>
+      </run>
+    </groups>
     <classes>
-      <class name="progresive.qa.test.auto.AutoTestRobust">
+      <class name="progresive.qa.test.auto.AutoTestExcelDataProvider">
         <methods>
-          <include name="beforeSuite"/>
           <include name="cleaningUp"/>
-          <include name="afterClass"/>
           <include name="setUp"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="jeepTest"/>
-          <include name="bmwTest"/>
-          <include name="beforeClass"/>
+          <include name="autoTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- progresive.qa.test.auto.AutoTestRobust -->
+      </class> <!-- progresive.qa.test.auto.AutoTestExcelDataProvider -->
     </classes>
-  </test> <!-- RegressionTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

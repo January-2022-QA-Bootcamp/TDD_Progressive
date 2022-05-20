@@ -21,7 +21,7 @@ public class AutoTestDataProviderClass extends BaseClass{
 		return list.iterator();
 	}
 	
-	@Test(enabled = true, priority = 1, groups = {"externalData"}, dataProvider = "autoData")
+	@Test(enabled = true, priority = 1, groups = {"externalData, auto"}, dataProvider = "autoData")
 	public void autoTestWithDataProviderClass(AutoData autoData) {
 		landingPage.landingPageSteps(commonActions);
 		zipCodePage.zipCodePageSteps(commonActions, autoData);

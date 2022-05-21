@@ -4,19 +4,24 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import reporting.ExtentTestManger;
 import utils.ExcelUtils;
+import utils.ReadConfigFile;
 
 public class AutoTestExcelDataProvider extends BaseClass{
 
 	@DataProvider(name = "autoData")
 	public Object[][] dataObjects(){
-		ExcelUtils excelUtils = new ExcelUtils("./src/test/resources/UserData.xlsx", "Sheet1");
+		String filePath = ReadConfigFile.getInstance().getExcelPath();
+		String sheetName = ReadConfigFile.getInstance().getSheetName();
+		ExcelUtils excelUtils = new ExcelUtils(filePath, sheetName);
 		return excelUtils.dataTable();
 	}
 	
-	@Test(dataProvider = "autoData")
+	@Test(dataProvider = "autoData", groups = {"excel"})
 	public void autoTest(String zip, String firstName, String middleName, String lastName, String suffix, String dob, String address, String apt, String city, String pobox,
 			String vYear, String vMake, String vModel, String body, String primaryUse, String rideShare, String owneOrLease, String owneDuration, String alarmnType, String enabled, String dayLightLamp) {
+		System.out.println(ExtentTestManger.extentMap.size());
 		landingPage.landingPageSteps(commonActions);
 		zipCodePage.zipCodePageSteps(commonActions, zip);
 		startPersonalDetailsPage.startPersonalDetailsPageSteps(commonActions, firstName, middleName.charAt(0), lastName,suffix, dob,

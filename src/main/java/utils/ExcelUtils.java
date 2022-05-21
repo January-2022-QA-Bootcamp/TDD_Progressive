@@ -10,8 +10,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import reporting.JavaLog;
-
 public class ExcelUtils {
 
 	Workbook book;
@@ -28,7 +26,7 @@ public class ExcelUtils {
 			sheet = book.getSheet(sheetName);
 		} catch (IOException e) {
 			e.printStackTrace();
-			JavaLog.log("File Not Found at : " + filePath);
+			//JavaLog.log("File Not Found at : " + filePath);
 		}
 	}
 
@@ -49,7 +47,7 @@ public class ExcelUtils {
 			}
 		}
 
-		System.out.println("Rows with Y : " + yRows);
+		//System.out.println("Rows with Y : " + yRows);
 		
 		arrays = new String[yRows][cols - 3]; // Array Length will be as it is, not start from zero. -3 for columns that we are not going to use
 
@@ -68,21 +66,21 @@ public class ExcelUtils {
 							} else if (cell.getCellType() == CellType.BOOLEAN) {
 								cellValue = String.valueOf(cell.getBooleanCellValue());
 							}
-							System.out.println(cellValue);
+							//System.out.println(cellValue);
 						} catch (NullPointerException e) {
-							System.out.println("Null at " + i + " : " + j);
+							//System.out.println("Null at " + i + " : " + j);
 						}
-						System.out.println(y +" <<>>"+ cellNo);
+						//System.out.println(y +" <<>>"+ cellNo);
 						arrays[y][cellNo] = cellValue;	
 						cellNo++;
 					}
-					System.out.println("Last cell : " + cellNo);
+					//System.out.println("Last cell : " + cellNo);
 					cellNo = 0;
 					y++;
-					System.out.println(y);
+					//System.out.println(y);
 				}
 			} catch (NullPointerException e) {
-
+				e.printStackTrace();
 			}
 		}
 

@@ -2,6 +2,7 @@ package dataProvider;
 
 public class AutoData {
 
+	//private String title;
 	private String zipCode;
 	private String firstName;
 	private char middleName;
@@ -28,6 +29,7 @@ public class AutoData {
 			String address, String aptNo, String city, boolean isPOBox, String vYear, String vMake, String vModel,
 			String bodyType, String primaryUse, boolean isRideShare, String ownOrLease, String ownedDuration,
 			String alarmType, boolean isEnable, boolean isDayTimeLamp) {
+		//this.title = title;
 		this.zipCode = zipCode;
 		this.firstName = firstName;
 		this.middleName = middleName;
@@ -51,6 +53,9 @@ public class AutoData {
 		this.isDayTimeLamp = isDayTimeLamp;
 	}
 	
+	/*
+	 * public String getTitle() { return title; }
+	 */
 	public String getZipCode() {
 		return zipCode;
 	}

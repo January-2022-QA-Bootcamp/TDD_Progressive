@@ -14,6 +14,9 @@ public class ReadConfigFile {
 	private static String url;
 	private static int pageLoadTime;
 	private static int implicitlyWaitTime;
+	private static String excelPath;
+	private static String sheetName;
+	private static String titleFilePath;
 
 	private ReadConfigFile() {
 
@@ -36,6 +39,9 @@ public class ReadConfigFile {
 			url = properties.getProperty("url");
 			pageLoadTime = Integer.parseInt(properties.getProperty("pageLoadTime"));
 			implicitlyWaitTime = Integer.parseInt(properties.getProperty("implicitlyWaitTime"));
+			excelPath = properties.getProperty("excelPath");
+			sheetName = properties.getProperty("sheetName");
+			titleFilePath = properties.getProperty("titleFilePath");
 		} catch (IOException e) {
 			JavaLog.log("File Not Found \n"+e.getMessage() + "<br>");
 			e.printStackTrace();
@@ -55,5 +61,17 @@ public class ReadConfigFile {
 
 	public int getImplicitlyWaitTime() {
 		return implicitlyWaitTime;
+	}
+	
+	public String getExcelPath() {
+		return excelPath;
+	}
+	
+	public String getSheetName() {
+		return sheetName;
+	}
+	
+	public String getTitleFilePath() {
+		return titleFilePath;
 	}
 }

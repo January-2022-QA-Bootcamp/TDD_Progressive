@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestChrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 17 23:05:33 EDT 2022</td>
+<td>Started on:</td><td>Sat May 21 01:15:46 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89929 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13938 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,122 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass()'><b>autoTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@2acbc859<br/>
+<a href="#Output-1329492804" onClick='toggleBox("Output-1329492804", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1329492804" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329492804">
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (633e6626bff563d3b7455186e6ba8eed)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at reporting.JavaLog.log(JavaLog.java:15)
+	at commons.CommonActions.click(CommonActions.java:38)
+	at objects.LandingPage.clickAuto(LandingPage.java:26)
+	at objects.LandingPage.landingPageSteps(LandingPage.java:46)
+	at progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass(AutoTestDataProviderClass.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1329492804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1329492804'><pre>java.lang.NullPointerException
+	at reporting.JavaLog.log(JavaLog.java:15)
+	at commons.CommonActions.click(CommonActions.java:38)
+	at objects.LandingPage.clickAuto(LandingPage.java:26)
+	at objects.LandingPage.landingPageSteps(LandingPage.java:46)
+	at progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass(AutoTestDataProviderClass.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>progresive.qa.test.auto.AutoTestDataProviderClass@6366ebe0</td></tr>
+<tr>
+<td title='progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass()'><b>autoTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@7a55f148<br/>
+<a href="#Output-1350269431" onClick='toggleBox("Output-1350269431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1350269431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1350269431">
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8e363cd3b9c8b1b1c56fbb4d8381df24)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at reporting.JavaLog.log(JavaLog.java:15)
+	at commons.CommonActions.click(CommonActions.java:38)
+	at objects.LandingPage.clickAuto(LandingPage.java:26)
+	at objects.LandingPage.landingPageSteps(LandingPage.java:46)
+	at progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass(AutoTestDataProviderClass.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1350269431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1350269431'><pre>java.lang.NullPointerException
+	at reporting.JavaLog.log(JavaLog.java:15)
+	at commons.CommonActions.click(CommonActions.java:38)
+	at objects.LandingPage.clickAuto(LandingPage.java:26)
+	at objects.LandingPage.landingPageSteps(LandingPage.java:46)
+	at progresive.qa.test.auto.AutoTestDataProviderClass.autoTestWithDataProviderClass(AutoTestDataProviderClass.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>progresive.qa.test.auto.AutoTestDataProviderClass@6366ebe0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,113 +194,7 @@ function toggleAllBoxes() {
 <td title='progresive.qa.test.auto.AutoTestRobust.dependsOnMethod()'><b>dependsOnMethod</b><br>Test class: progresive.qa.test.auto.AutoTestRobust</td>
 <td></td>
 <td>0</td>
-<td>progresive.qa.test.auto.AutoTestRobust@587c290d</td></tr>
-<tr>
-<td title='progresive.qa.test.auto.AutoTestDataProviderClass.jeepTestWithDataProviderClass()'><b>jeepTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@467b684d<br/>
-<a href="#Output-1324526451" onClick='toggleBox("Output-1324526451", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1324526451" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1324526451">
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br/>
-Current URL is : https://www.progressive.com/#l<br><br/>
-11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//*[@name='ZipCode'])[1]]<br><br/>
-Current URL is : https://www.progressive.com/#l<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: (//input[@name='qsButton'])[1]]<br><br/>
-Jenny : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br><br/>
-H : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br><br/>
-Doe : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br><br/>
-11/04/1987 : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br><br/>
-12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
-2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
-Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input] : is Not selected<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input]<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> class name: blue]<br><br/>
-By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br><br/>
-Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
-12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
-2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
-By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br><br/>
-Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> class name: blue]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Year]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Make]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_Model]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> tag name: checkbox-input] : is Not selected<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br><br/>
-Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (6cc97ce4074f575037074298e6ce0048)] -> xpath: //button[text()='Continue']]<br><br/>
-</div>
-</td>
-<td></td>
-<td>38</td>
-<td>progresive.qa.test.auto.AutoTestDataProviderClass@4516af24</td></tr>
-<tr>
-<td title='progresive.qa.test.auto.AutoTestDataProviderClass.jeepTestWithDataProviderClass()'><b>jeepTestWithDataProviderClass</b><br>Test class: progresive.qa.test.auto.AutoTestDataProviderClass<br>Parameters: dataProvider.AutoData@5bb8f9e2<br/>
-<a href="#Output-768795248" onClick='toggleBox("Output-768795248", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-768795248" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-768795248">
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br><br/>
-Current URL is : https://www.progressive.com/#s<br><br/>
-11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: zipCode_overlay_subproducts]<br><br/>
-Current URL is : https://www.progressive.com/#s<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: qsButton_overlay_subproducts]<br><br/>
-Adam : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br><br/>
-J : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br><br/>
-Obama : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br><br/>
-11/04/1980 : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br><br/>
-12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
-2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
-Jamaica : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input] : is Not selected<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input]<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> class name: blue]<br><br/>
-By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br><br/>
-Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
-12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br><br/>
-2B : value passed to element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br><br/>
-By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br><br/>
-Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> class name: blue]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Year]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Make]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_Model]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> tag name: checkbox-input] : is Not selected<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br><br/>
-Sleeping for : 0.5 seconds zZzz..<br><br/>
-5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br><br/>
-Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br><br/>
-Element is Cliking : [[ChromeDriver: chrome on WINDOWS (74d402d32af142eba68f1e9f309e38e2)] -> xpath: //button[text()='Continue']]<br><br/>
-</div>
-</td>
-<td></td>
-<td>37</td>
-<td>progresive.qa.test.auto.AutoTestDataProviderClass@4516af24</td></tr>
+<td>progresive.qa.test.auto.AutoTestRobust@3d0f8e03</td></tr>
 </table><p>
 </body>
 </html>

@@ -12,9 +12,11 @@
     <classes>
       <class name="progresive.qa.test.auto.AutoTestExcelDataProvider">
         <methods>
+          <include name="reportingInitiating"/>
           <include name="cleaningUp"/>
+          <include name="endReport"/>
           <include name="setUp"/>
-          <include name="autoTest" invocation-numbers="0"/>
+          <include name="autoTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- progresive.qa.test.auto.AutoTestExcelDataProvider -->
     </classes>

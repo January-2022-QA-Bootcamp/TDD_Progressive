@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-import reporting.JavaLog;
+import reporting.Loggers;
 
 public class ReadConfigFile {
 
@@ -43,10 +43,10 @@ public class ReadConfigFile {
 			sheetName = properties.getProperty("sheetName");
 			titleFilePath = properties.getProperty("titleFilePath");
 		} catch (IOException e) {
-			JavaLog.log("File Not Found \n"+e.getMessage() + "<br>");
+			Loggers.log("File Not Found \n"+e.getMessage() + "<br>");
 			e.printStackTrace();
 		} catch(NumberFormatException e) {
-			JavaLog.log("Number format in properties not correct \n"+e.getMessage() + "<br>");
+			Loggers.log("Number format in properties not correct \n"+e.getMessage() + "<br>");
 			e.printStackTrace();
 		}
 	}

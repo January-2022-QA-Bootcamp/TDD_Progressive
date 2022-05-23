@@ -88,7 +88,8 @@ public class BaseClass {
 			ExtentTestManger.getTest().log(Status.SKIP, "Test Skipped");
 		}else if(result.getStatus() == ITestResult.FAILURE) {
 			ExtentTestManger.getTest().log(Status.FAIL, "Test Failed \n" + result.getThrowable());
-			commonActions.getScreenShot();
+			String ssLocation = commonActions.getScreenShot();
+			ExtentTestManger.getTest().addScreenCaptureFromPath(ssLocation);
 		}
 	}
 	

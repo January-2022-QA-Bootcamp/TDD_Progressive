@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import reporting.JavaLog;
+import reporting.Loggers;
 
 public class ReadTxtFile {
 
@@ -18,7 +18,7 @@ public class ReadTxtFile {
 			reader = new FileReader(filePath);
 			bufferedReader = new BufferedReader(reader);
 		} catch (IOException e) {
-			JavaLog.log("FileNot Found in location :" + filePath);
+			Loggers.log("FileNot Found in location :" + filePath);
 		}
 	}
 
@@ -30,7 +30,7 @@ public class ReadTxtFile {
 				list.add(line);
 			}
 		} catch (IOException e) {
-			JavaLog.log("Cannot read the file");
+			Loggers.log("Cannot read the file");
 		}
 		return list;
 	}

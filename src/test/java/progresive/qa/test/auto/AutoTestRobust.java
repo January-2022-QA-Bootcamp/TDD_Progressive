@@ -23,10 +23,10 @@ public class AutoTestRobust extends BaseClass{
 		zipCodePage.zipCodePageSteps(commonActions, "11428");
 		startPersonalDetailsPage.startPersonalDetailsPageSteps(commonActions, "Jenny", 'H', "Doe","II", "11/04/1987",
 				"12312 Liberty Avenue", "2B", "Jamaica", true);
-		vehicleDetailsPage.vehicleDetailsPageSteps(commonActions, "2022", "BMW", "230", "", "4TNC", false, "3", "E","5",false, false);
+		vehicleDetailsPage.vehicleDetailsPageSteps(commonActions, "2022", "BMW", "230", "SUV (4CYL 4X2)", "4TNC", false, "3", "E","5",false, false);
 	}
 	
-	@Test(enabled = true, priority = 1, groups = {"auto","jeep"})
+	@Test(enabled = false, priority = 1, groups = {"auto","jeep"})
 	public void jeepTest() {
 		landingPage.landingPageSteps(commonActions);
 		zipCodePage.zipCodePageSteps(commonActions, "11418");

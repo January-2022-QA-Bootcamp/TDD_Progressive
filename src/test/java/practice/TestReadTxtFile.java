@@ -9,5 +9,6 @@ public class TestReadTxtFile {
 		for(String s: txtFile.getListData()) {
 			System.out.println(s);
 		}
+		System.out.println(System.getProperty("user.name"));
 	}
 }

@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -138,5 +140,19 @@ public class StartPersonalDetailsPage {
 		checkPOBoxorMilitary(commonActions, autoData.isPOBox());
 		clickStartMyQuote(commonActions);
 		fixError(commonActions, autoData.getAddress(), autoData.getCity(), autoData.getAptNo());
+	}
+	
+	public void startPersonalDetailsPageSteps(CommonActions commonActions, Map<String, String>map) {
+		inputFirstName(commonActions, map.get("First Name"));
+		inputMiddleName(commonActions, map.get("Middle Name").charAt(0));
+		inputLastName(commonActions, map.get("Last Name"));
+		selectSuffix(commonActions, map.get("Suffix"));
+		inputDOB(commonActions, map.get("DOB"));
+		inputAddress(commonActions, map.get("Address"));
+		inputAptNo(commonActions, map.get("Apt No"));
+		inputCity(commonActions, map.get("City"));
+		checkPOBoxorMilitary(commonActions, Boolean.parseBoolean(map.get("P.O.Box")));
+		clickStartMyQuote(commonActions);
+		fixError(commonActions, map.get("Address"), map.get("City"), map.get("Apt No"));
 	}
 }

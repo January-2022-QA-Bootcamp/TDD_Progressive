@@ -2,6 +2,8 @@ package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -26,7 +28,7 @@ public class ExcelUtils {
 			sheet = book.getSheet(sheetName);
 		} catch (IOException e) {
 			e.printStackTrace();
-			//JavaLog.log("File Not Found at : " + filePath);
+			// JavaLog.log("File Not Found at : " + filePath);
 		}
 	}
 
@@ -47,9 +49,10 @@ public class ExcelUtils {
 			}
 		}
 
-		//System.out.println("Rows with Y : " + yRows);
-		
-		arrays = new String[yRows][cols - 3]; // Array Length will be as it is, not start from zero. -3 for columns that we are not going to use
+		// System.out.println("Rows with Y : " + yRows);
+
+		arrays = new String[yRows][cols - 3]; // Array Length will be as it is, not start from zero. -3 for columns that
+												// we are not going to use
 
 		int y = 0;
 		for (int i = 1; i < rows; i++) {
@@ -66,18 +69,18 @@ public class ExcelUtils {
 							} else if (cell.getCellType() == CellType.BOOLEAN) {
 								cellValue = String.valueOf(cell.getBooleanCellValue());
 							}
-							//System.out.println(cellValue);
+							// System.out.println(cellValue);
 						} catch (NullPointerException e) {
-							//System.out.println("Null at " + i + " : " + j);
+							// System.out.println("Null at " + i + " : " + j);
 						}
-						//System.out.println(y +" <<>>"+ cellNo);
-						arrays[y][cellNo] = cellValue;	
+						// System.out.println(y +" <<>>"+ cellNo);
+						arrays[y][cellNo] = cellValue;
 						cellNo++;
 					}
-					//System.out.println("Last cell : " + cellNo);
+					// System.out.println("Last cell : " + cellNo);
 					cellNo = 0;
 					y++;
-					//System.out.println(y);
+					// System.out.println(y);
 				}
 			} catch (NullPointerException e) {
 				e.printStackTrace();
@@ -85,5 +88,51 @@ public class ExcelUtils {
 		}
 
 		return arrays;
+	}
+
+	public Map<Integer, Map<String, String>> mapData() {
+		Map<Integer, Map<String, String>> allRowsMap = new HashMap<Integer, Map<String, String>>();
+
+		int totalsRows = sheet.getLastRowNum();
+		int totalCols = sheet.getRow(0).getLastCellNum();
+
+		int yRowCounter = 0;
+		for (int i = 0; i < totalsRows; i++) {
+			Map<String, String> eachRowMap = new HashMap<String, String>();
+			// eachRowMap.clear();
+			boolean isY = false;
+			for (int j = 0; j < totalCols; j++) {
+				String keyValue = "";
+				String cellValue = "";
+				try {
+					Cell keyCell = sheet.getRow(0).getCell(j);
+					keyValue = keyCell.getStringCellValue();
+					Cell valueCell = sheet.getRow(i).getCell(j);
+					if (valueCell.getCellType() == CellType.STRING) {
+						cellValue = valueCell.getStringCellValue();
+					} else if (valueCell.getCellType() == CellType.BOOLEAN) {
+						cellValue = String.valueOf(valueCell.getBooleanCellValue());
+					}
+					if(cellValue.equalsIgnoreCase("y")) {
+						isY = true;
+					}
+					eachRowMap.put(keyValue, cellValue);
+				} catch (NullPointerException e) {
+					// e.printStackTrace();
+				}
+			}
+			try {
+				//if (eachRowMap.get("Execution").equalsIgnoreCase("y")) {
+				if(isY) {
+					// System.out.println(yRowCounter);
+					allRowsMap.put(yRowCounter, eachRowMap);
+					yRowCounter++;
+				}
+			} catch (Exception e) {
+				//e.printStackTrace();
+			}
+		}
+
+		return allRowsMap;
 	}
 }

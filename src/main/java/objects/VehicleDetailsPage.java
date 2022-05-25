@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -134,6 +136,22 @@ public class VehicleDetailsPage {
 		selectVehicleOwnedDuration(commonActions, autoData.getOwnedDuration());
 		selectVehicleAlarmType(commonActions, autoData.getAlarmType());
 		checkVehicleDaytimeLamp(commonActions, autoData.isEnable(), autoData.isDayTimeLamp());
+		clickDoneBtn(commonActions);
+		clickContinueBtn(commonActions);
+	}
+	
+	public void vehicleDetailsPageSteps(CommonActions commonActions, Map<String, String> map) {
+
+		selectVehicleYear(commonActions, map.get("Vehicle Year"));
+		selectVehicleMake(commonActions, map.get("Vehicle Make"));
+		selectVehicleModel(commonActions, map.get("Vehicle Model"));
+		selectVehicleBodyType(commonActions, map.get("Body Type"));
+		selectVehiclePrimaryUse(commonActions, map.get("Priary Use"));
+		checkRideShare(commonActions, Boolean.parseBoolean(map.get("Is Ride Share?")));
+		selectVehicleOwnOrLease(commonActions, map.get("Own Or Lease"));
+		selectVehicleOwnedDuration(commonActions, map.get("Owend Duration"));
+		selectVehicleAlarmType(commonActions, map.get("Alarm Type"));
+		checkVehicleDaytimeLamp(commonActions, Boolean.parseBoolean(map.get("Is Day Lamp Enabled?")), Boolean.parseBoolean(map.get("Is Daytime Lamp")));
 		clickDoneBtn(commonActions);
 		clickContinueBtn(commonActions);
 	}

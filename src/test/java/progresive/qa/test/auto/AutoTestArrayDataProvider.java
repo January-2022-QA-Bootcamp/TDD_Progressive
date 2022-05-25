@@ -8,13 +8,14 @@ import reporting.ExtentTestManger;
 import utils.ExcelUtils;
 import utils.ReadConfigFile;
 
-public class AutoTestExcelDataProvider extends BaseClass{
+public class AutoTestArrayDataProvider extends BaseClass{
 
 	@DataProvider(name = "autoData")
 	public Object[][] dataObjects(){
 		String filePath = ReadConfigFile.getInstance().getExcelPath();
 		String sheetName = ReadConfigFile.getInstance().getSheetName();
 		ExcelUtils excelUtils = new ExcelUtils(filePath, sheetName);
+		System.out.println(excelUtils.dataTable().length);
 		return excelUtils.dataTable();
 	}
 	

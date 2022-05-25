@@ -3,8 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="home"/>
+        <exclude name="auto"/>
+      </run>
+    </groups>
     <classes>
-      <class name="progresive.qa.test.auto.AutoTestRobust">
+      <class name="progresive.qa.test.auto.AutoTestHashMapDataProvider">
         <methods>
           <include name="afterEachTestMethod"/>
           <include name="reportingInitiating"/>
@@ -12,9 +18,9 @@
           <include name="endReport"/>
           <include name="setUp"/>
           <include name="startReport"/>
-          <include name="bmwTestWithoutParam"/>
+          <include name="autoTest"/>
         </methods>
-      </class> <!-- progresive.qa.test.auto.AutoTestRobust -->
+      </class> <!-- progresive.qa.test.auto.AutoTestHashMapDataProvider -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

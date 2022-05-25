@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +53,11 @@ public class ZipCodePage {
 	
 	public void zipCodePageSteps(CommonActions commonActions, AutoData autoData) {
 		inputZipCode(commonActions, autoData.getZipCode());
+		clickQuoteBtn(commonActions);
+	}
+	
+	public void zipCodePageSteps(CommonActions commonActions, Map<String, String>inputMap) {
+		inputZipCode(commonActions, inputMap.get("Zip"));
 		clickQuoteBtn(commonActions);
 	}
 }

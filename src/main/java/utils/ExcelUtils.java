@@ -41,7 +41,11 @@ public class ExcelUtils {
 
 		for (int i = 1; i <= rows; i++) {
 			try {
-				if (sheet.getRow(i).getCell(2).getStringCellValue().equalsIgnoreCase("Y")) {
+				Row row = sheet.getRow(i);
+				Cell cell = row.getCell(2);
+				String cellValue = cell.getStringCellValue();
+				
+				if (cellValue.equalsIgnoreCase("Y")) {
 					yRows++;
 				}
 			} catch (NullPointerException e) {

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: h1] has text : Welcome to Progressive<br>]]>
+    </line>
+    <line>
+      <![CDATA[Actual : Welcome to Progressive<<<>>>Expeted : Welcome to Progressive<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://www.progressive.com/home/home/#l<br>]]>
+    </line>
+    <line>
+      <![CDATA[11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//*[@name='ZipCode'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://www.progressive.com/home/home/#l<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//input[@name='qsButton'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Jahangir : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+    </line>
+    <line>
+      <![CDATA[M : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Kabir : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
+    </line>
+    <line>
+      <![CDATA[05/09/2000 : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br>]]>
+    </line>
+    <line>
+      <![CDATA[12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+    </line>
+    <line>
+      <![CDATA[3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Richmond Hill : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: checkbox-input] : is Not selected<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> class name: blue]<br>]]>
+    </line>
+    <line>
+      <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+    </line>
+    <line>
+      <![CDATA[12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+    </line>
+    <line>
+      <![CDATA[3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+    </line>
+    <line>
+      <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> class name: blue]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Year]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Make]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Model]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: checkbox-input] : is Not selected<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: //button[text()='Continue']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: h1] has text : Spring showers bring big savings<br>]]>
+    </line>
+    <line>
+      <![CDATA[Actual : Spring showers bring big savings<<<>>>Expeted : Spring showers bring big savings<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://www.progressive.com/#s<br>]]>
+    </line>
+    <line>
+      <![CDATA[11423 : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: zipCode_overlay_subproducts]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://www.progressive.com/#s<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: qsButton_overlay_subproducts]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Jack : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+    </line>
+    <line>
+      <![CDATA[N : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Jill : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
+    </line>
+    <line>
+      <![CDATA[01/03/1977 : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br>]]>
+    </line>
+    <line>
+      <![CDATA[10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+    </line>
+    <line>
+      <![CDATA[5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Hollis : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: checkbox-input] : is Not selected<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> class name: blue]<br>]]>
+    </line>
+    <line>
+      <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+    </line>
+    <line>
+      <![CDATA[10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+    </line>
+    <line>
+      <![CDATA[5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+    </line>
+    <line>
+      <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Present<br>]]>
+    </line>
+    <line>
+      <![CDATA[Hollis : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> class name: blue]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Year]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Make]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Model]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: checkbox-input] : is Not selected<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+    </line>
+    <line>
+      <![CDATA[5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> xpath: //button[text()='Continue']]<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="77020" started-at="2022-06-05T23:06:32 EDT" finished-at="2022-06-05T23:07:49 EDT">
+    <groups>
+      <group name="excel">
+        <method signature="AutoTestHashMapDataProvider.autoTest(java.util.Map)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="autoTest" class="progresive.qa.test.auto.AutoTestHashMapDataProvider"/>
+      </group> <!-- excel -->
+    </groups>
+    <test name="Test" duration-ms="77020" started-at="2022-06-05T23:06:32 EDT" finished-at="2022-06-05T23:07:49 EDT">
+      <class name="progresive.qa.test.auto.AutoTestHashMapDataProvider">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="setUp" is-config="true" duration-ms="7027" started-at="2022-06-05T23:06:33 EDT" finished-at="2022-06-05T23:06:40 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startReport(java.lang.reflect.Method)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="startReport" is-config="true" duration-ms="10" started-at="2022-06-05T23:06:40 EDT" finished-at="2022-06-05T23:06:40 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void progresive.qa.test.auto.AutoTestHashMapDataProvider.autoTest(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="autoTest(java.util.Map)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="autoTest" duration-ms="37530" started-at="2022-06-05T23:06:40 EDT" data-provider="mapData" finished-at="2022-06-05T23:07:18 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Jahangir, Middle Name=M, Vehicle Model=CHEROKEE, P.O.Box=false, Priary Use=4TNC, Execution=Y, DOB=05/09/2000, Apt No=3A, Alarm Type=5, Body Type=SUV (4CYL 4X2), Vehicle Make=JEEP, City=Richmond Hill, Is Day Lamp Enabled?=false, Own Or Lease=3, Test Case Name=Good Credit, Owend Duration=E, Suffix=III, Test Case No=, Vehicle Year=2022, Last Name=Kabir}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: h1] has text : Welcome to Progressive<br>]]>
+            </line>
+            <line>
+              <![CDATA[Actual : Welcome to Progressive<<<>>>Expeted : Welcome to Progressive<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://www.progressive.com/home/home/#l<br>]]>
+            </line>
+            <line>
+              <![CDATA[11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//*[@name='ZipCode'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://www.progressive.com/home/home/#l<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//input[@name='qsButton'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Jahangir : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+            </line>
+            <line>
+              <![CDATA[M : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Kabir : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
+            </line>
+            <line>
+              <![CDATA[05/09/2000 : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br>]]>
+            </line>
+            <line>
+              <![CDATA[12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+            </line>
+            <line>
+              <![CDATA[3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Richmond Hill : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: checkbox-input] : is Not selected<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> class name: blue]<br>]]>
+            </line>
+            <line>
+              <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+            </line>
+            <line>
+              <![CDATA[12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+            </line>
+            <line>
+              <![CDATA[3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+            </line>
+            <line>
+              <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> class name: blue]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Year]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Make]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_Model]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> tag name: checkbox-input] : is Not selected<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: //button[text()='Continue']]<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autoTest -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="afterEachTestMethod" is-config="true" duration-ms="1" started-at="2022-06-05T23:07:18 EDT" finished-at="2022-06-05T23:07:18 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=autoTest status=SUCCESS method=AutoTestHashMapDataProvider.autoTest(java.util.Map)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261] output=Element is Cliking : [[ChromeDriver: chrome on WINDOWS (07fd2414b64f39842a47115221327222)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="cleaningUp()[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="cleaningUp" is-config="true" duration-ms="664" started-at="2022-06-05T23:07:18 EDT" finished-at="2022-06-05T23:07:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleaningUp -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="setUp" is-config="true" duration-ms="4054" started-at="2022-06-05T23:07:18 EDT" finished-at="2022-06-05T23:07:22 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startReport(java.lang.reflect.Method)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="startReport" is-config="true" duration-ms="2" started-at="2022-06-05T23:07:22 EDT" finished-at="2022-06-05T23:07:22 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void progresive.qa.test.auto.AutoTestHashMapDataProvider.autoTest(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="autoTest(java.util.Map)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="autoTest" duration-ms="26261" started-at="2022-06-05T23:07:22 EDT" data-provider="mapData" finished-at="2022-06-05T23:07:49 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Middle Name=N, Vehicle Model=230, P.O.Box=false, Priary Use=4TNC, Execution=Y, DOB=01/03/1977, Apt No=5C, Alarm Type=5, Body Type=, Vehicle Make=BMW, City=Hollis, Is Day Lamp Enabled?=false, Own Or Lease=3, Test Case Name=Good Credit with Violation, Owend Duration=E, Suffix=II, Test Case No=, Vehicle Year=2022, Last Name=Jill}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: h1] has text : Spring showers bring big savings<br>]]>
+            </line>
+            <line>
+              <![CDATA[Actual : Spring showers bring big savings<<<>>>Expeted : Spring showers bring big savings<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://www.progressive.com/#s<br>]]>
+            </line>
+            <line>
+              <![CDATA[11423 : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: zipCode_overlay_subproducts]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://www.progressive.com/#s<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: qsButton_overlay_subproducts]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Jack : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br>]]>
+            </line>
+            <line>
+              <![CDATA[N : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Jill : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
+            </line>
+            <line>
+              <![CDATA[01/03/1977 : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br>]]>
+            </line>
+            <line>
+              <![CDATA[10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+            </line>
+            <line>
+              <![CDATA[5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Hollis : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: checkbox-input] : is Not selected<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> class name: blue]<br>]]>
+            </line>
+            <line>
+              <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+            </line>
+            <line>
+              <![CDATA[10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br>]]>
+            </line>
+            <line>
+              <![CDATA[5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br>]]>
+            </line>
+            <line>
+              <![CDATA[By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Present<br>]]>
+            </line>
+            <line>
+              <![CDATA[Hollis : value passed to element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> class name: blue]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Year]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Make]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_Model]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> tag name: checkbox-input] : is Not selected<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Sleeping for : 0.5 seconds zZzz..<br>]]>
+            </line>
+            <line>
+              <![CDATA[5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> xpath: //button[text()='Continue']]<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autoTest -->
+        <test-method status="PASS" signature="cleaningUp()[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="cleaningUp" is-config="true" duration-ms="646" started-at="2022-06-05T23:07:49 EDT" finished-at="2022-06-05T23:07:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleaningUp -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2022-06-05T23:07:49 EDT" finished-at="2022-06-05T23:07:49 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=autoTest status=SUCCESS method=AutoTestHashMapDataProvider.autoTest(java.util.Map)[pri:0, instance:progresive.qa.test.auto.AutoTestHashMapDataProvider@4fb64261] output=Element is Cliking : [[ChromeDriver: chrome on WINDOWS (72717d60ffa33e5d2d37bc3de7305409)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- progresive.qa.test.auto.AutoTestHashMapDataProvider -->
+      <class name="progressive.qa.test.home.HomeTest">
+        <test-method status="PASS" signature="reportingInitiating()[pri:0, instance:progressive.qa.test.home.HomeTest@78ac1102]" name="reportingInitiating" is-config="true" duration-ms="280" started-at="2022-06-05T23:06:32 EDT" finished-at="2022-06-05T23:06:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportingInitiating -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:progressive.qa.test.home.HomeTest@78ac1102]" name="endReport" is-config="true" duration-ms="334" started-at="2022-06-05T23:07:49 EDT" finished-at="2022-06-05T23:07:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- progressive.qa.test.home.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

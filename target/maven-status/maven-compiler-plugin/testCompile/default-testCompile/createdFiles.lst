@@ -1,0 +1,14 @@
+progresive\qa\test\auto\AutoTest.class
+progresive\qa\test\auto\AutoTestDataProviderClass.class
+progressive\qa\test\home\HomeTest.class
+practice\TestExcelUtils.class
+practice\TestDate.class
+practice\TestReadTxtFile.class
+progresive\qa\test\auto\AutoTestHashMapDataProvider.class
+progresive\qa\test\auto\AutoTestRobust.class
+practice\TestMap.class
+testPackage\TestSeleniumMain.class
+progresive\qa\test\auto\AutoTestArrayDataProvider.class
+practice\TestReadConfig.class
+testPackage\TestAmazonMusic.class
+testPackage\TestSeleniumTestNG.class

@@ -1,6 +1,8 @@
 package progresive.qa.test.auto;
 
 import java.util.Map;
+
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.BaseClass;
@@ -29,5 +31,18 @@ public class AutoTestHashMapDataProvider extends BaseClass{
 		zipCodePage.zipCodePageSteps(commonActions, map);
 		startPersonalDetailsPage.startPersonalDetailsPageSteps(commonActions, map);
 		vehicleDetailsPage.vehicleDetailsPageSteps(commonActions, map);
+	}
+	
+	//@Test(groups = "retry",retryAnalyzer = Retry.class)
+	@Test(groups = "retry")
+	public void retryTest() {
+		System.out.println("Retry Test");
+		Assert.fail();
+	}
+	
+	@Test(groups = "retry")
+	public void retryTest2() {
+		System.out.println("Retry Test2");
+		Assert.fail();
 	}
 }

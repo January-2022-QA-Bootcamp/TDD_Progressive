@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,  6 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...)">autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest">retryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...)">autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest2">retryTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest">retryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest">retryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest">retryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest2">retryTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest2">retryTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="progresive.qa.test.auto.AutoTestHashMapDataProvider" hash-for-method="retryTest2">retryTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,30 +163,118 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">progresive.qa.test.auto.AutoTestHashMapDataProvider</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...)">
-                  </a> <!-- autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...) -->
-                  <span class="method-name">autoTest</span>
-                  <span class="parameters">({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Jahangir, Middle Name=M, Vehicle Model=CHEROKEE, P.O.Box=false, Priary Use=4TNC, Execution=Y, DOB=05/09/2000, Apt No=3A, Alarm Type=5, Body Type=SUV (4CYL 4X2), Vehicle Make=JEEP, City=Richmond Hill, Is Day Lamp Enabled?=false, Own Or Lease=3, Test Case Name=Good Credit, Owend Duration=E, Suffix=III, Test Case No=, Vehicle Year=2022, Last Name=Kabir})</span>
+                  <a name="retryTest">
+                  </a> <!-- retryTest -->
+                  <span class="method-name">retryTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest(AutoTestHashMapDataProvider.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...)">
-                  </a> <!-- autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...) -->
-                  <span class="method-name">autoTest</span>
-                  <span class="parameters">({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Middle Name=N, Vehicle Model=230, P.O.Box=false, Priary Use=4TNC, Execution=Y, DOB=01/03/1977, Apt No=5C, Alarm Type=5, Body Type=, Vehicle Make=BMW, City=Hollis, Is Day Lamp Enabled?=false, Own Or Lease=3, Test Case Name=Good Credit with Violation, Owend Duration=E, Suffix=II, Test Case No=, Vehicle Year=2022, Last Name=Jill})</span>
+                  <a name="retryTest2">
+                  </a> <!-- retryTest2 -->
+                  <span class="method-name">retryTest2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2(AutoTestHashMapDataProvider.java:46)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">progresive.qa.test.auto.AutoTestHashMapDataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest">
+                  </a> <!-- retryTest -->
+                  <span class="method-name">retryTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest(AutoTestHashMapDataProvider.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest">
+                  </a> <!-- retryTest -->
+                  <span class="method-name">retryTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest(AutoTestHashMapDataProvider.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest">
+                  </a> <!-- retryTest -->
+                  <span class="method-name">retryTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest(AutoTestHashMapDataProvider.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest2">
+                  </a> <!-- retryTest2 -->
+                  <span class="method-name">retryTest2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2(AutoTestHashMapDataProvider.java:46)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest2">
+                  </a> <!-- retryTest2 -->
+                  <span class="method-name">retryTest2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2(AutoTestHashMapDataProvider.java:46)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retryTest2">
+                  </a> <!-- retryTest2 -->
+                  <span class="method-name">retryTest2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2(AutoTestHashMapDataProvider.java:46)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -158,16 +285,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;retryAnalyzer.TransformRetry&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;exclude name=&quot;home&quot;/&gt;
+        &lt;exclude name=&quot;excel&quot;/&gt;
         &lt;exclude name=&quot;auto&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;progressive.qa.test.home.HomeTest&quot;/&gt;
       &lt;class name=&quot;progresive.qa.test.auto.AutoTestHashMapDataProvider&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -182,7 +311,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,10 +322,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">excel</span>
+              <span class="test-group-name">retry</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">autoTest</span>
+                <span class="method-in-group-name">retryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">retryTest2</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -216,20 +349,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'autoTest')
+data.setCell(0, 1, 'retryTest')
 data.setCell(0, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
-data.setCell(0, 3, 36814);
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'autoTest')
+data.setCell(1, 1, 'retryTest')
 data.setCell(1, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
-data.setCell(1, 3, 35764);
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'retryTest2')
+data.setCell(2, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'retryTest2')
+data.setCell(3, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'retryTest')
+data.setCell(4, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'retryTest')
+data.setCell(5, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'retryTest2')
+data.setCell(6, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'retryTest2')
+data.setCell(7, 2, 'progresive.qa.test.auto.AutoTestHashMapDataProvider')
+data.setCell(7, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 18 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,124 +397,17 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> tag name: h1] has text : Welcome to Progressive<br></span>
-                <span class="reporter-method-output">Actual : Welcome to Progressive<<<>>>Expeted : Welcome to Progressive<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">11418 : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> xpath: (//*[@name='ZipCode'])[1]]<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> xpath: (//input[@name='qsButton'])[1]]<br></span>
-                <span class="reporter-method-output">Jahangir : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br></span>
-                <span class="reporter-method-output">M : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br></span>
-                <span class="reporter-method-output">Kabir : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">III : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br></span>
-                <span class="reporter-method-output">05/09/2000 : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br></span>
-                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
-                <span class="reporter-method-output">Richmond Hill : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br></span>
-                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
-                <span class="reporter-method-output">12312 Liberty Avenue : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">3A : value passed to element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br></span>
-                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_Year]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">JEEP : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_Make]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">CHEROKEE : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_Model]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">SUV (4CYL 4X2) : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_BodyStyle]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br></span>
-                <span class="reporter-method-output">Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (77ac939d86583a189976f1a4bd6cbe62)] -> xpath: //button[text()='Continue']]<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> xpath: (//p[contains(text(),'Auto')])[1]]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> tag name: h1] has text : Springtime savings are here<br></span>
-                <span class="reporter-method-output">Actual : Springtime savings are here<<<>>>Expeted : Springtime savings are here<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">11423 : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> xpath: (//*[@name='ZipCode'])[1]]<br></span>
-                <span class="reporter-method-output">Current URL is : https://www.progressive.com/#l<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> xpath: (//input[@name='qsButton'])[1]]<br></span>
-                <span class="reporter-method-output">Jack : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName]<br></span>
-                <span class="reporter-method-output">N : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_MiddleInitial]<br></span>
-                <span class="reporter-method-output">Jill : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_LastName]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">II : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br></span>
-                <span class="reporter-method-output">01/03/1977 : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth]<br></span>
-                <span class="reporter-method-output">10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
-                <span class="reporter-method-output">Hollis : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_City]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[4] : Element is Present<br></span>
-                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
-                <span class="reporter-method-output">10089 200th St : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_MailingAddress]<br></span>
-                <span class="reporter-method-output">5C : value passed to element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit]<br></span>
-                <span class="reporter-method-output">By.xpath: (//div[contains(.,'Required to continue')])[5] : Element is Not Present<br></span>
-                <span class="reporter-method-output">Current URL is : https://autoinsurance1.progressivedirect.com/0/UQA/Quote/NameAndAddressEdit<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> class name: blue]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">2022 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_Year]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">BMW : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_Make]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">230 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_Model]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">4TNC : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_VehicleUse]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> tag name: checkbox-input] : is Not selected<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">3 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_OwnOrLease]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">E : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_LengthOfOwnership]<br></span>
-                <span class="reporter-method-output">Sleeping for : 0.5 seconds zZzz..<br></span>
-                <span class="reporter-method-output">5 : value has been selected from the element : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> id: VehiclesNew_embedded_questions_list_AntitheftDevice]<br></span>
-                <span class="reporter-method-output">Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Done']'<br></span>
-                <span class="reporter-method-output">Element is Cliking : [[ChromeDriver: chrome on WINDOWS (8530f082b9e9b687e26af18afe98fab1)] -> xpath: //button[text()='Continue']]<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">progressive.qa.test.home.HomeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">homeTest1</span>
-                <br/>
-                <span class="ignored-method-name">homeTest2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">progresive.qa.test.auto.AutoTestHashMapDataProvider</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportingInitiating</span>
-                <br/>
-                <span class="ignored-method-name">endReport</span>
+                <span class="ignored-method-name">autoTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -369,60 +419,178 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">progressive.qa.test.home.HomeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">progresive.qa.test.auto.AutoTestHashMapDataProvider</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportingInitiating</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">progresive.qa.test.auto.AutoTestHashMapDataProvider</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">1134 ms</span>
+                <span class="method-start">281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.autoTest(java.util.Map))</span>
-                <span class="method-start">6617 ms</span>
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest())</span>
+                <span class="method-start">5372 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">autoTest({Zip=11418, Is Ride Share?=false, Is Daytime Lamp=false, Address=12312 Liberty Avenue, First Name=Ja...)</span>
-                <span class="method-start">6638 ms</span>
+                <span class="method-name">retryTest</span>
+                <span class="method-start">5384 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=autoTest status=SUCCESS method=AutoTestHashMapDataProvider.autoTest(java.util.Map)[...)</span>
-                <span class="method-start">43459 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest status=SKIP method=AutoTestHashMapDataProvider.retryTest()[pri:0, instanc...)</span>
+                <span class="method-start">5395 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">cleaningUp</span>
-                <span class="method-start">43460 ms</span>
+                <span class="method-start">5400 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">44222 ms</span>
+                <span class="method-start">6080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.autoTest(java.util.Map))</span>
-                <span class="method-start">47341 ms</span>
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest())</span>
+                <span class="method-start">9473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">autoTest({Zip=11423, Is Ride Share?=false, Is Daytime Lamp=false, Address=10089 200th St, First Name=Jack, Mi...)</span>
-                <span class="method-start">47342 ms</span>
+                <span class="method-name">retryTest</span>
+                <span class="method-start">9474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=autoTest status=SUCCESS method=AutoTestHashMapDataProvider.autoTest(java.util.Map)[...)</span>
-                <span class="method-start">83107 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest status=SKIP method=AutoTestHashMapDataProvider.retryTest()[pri:0, instanc...)</span>
+                <span class="method-start">9476 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">cleaningUp</span>
-                <span class="method-start">83108 ms</span>
+                <span class="method-start">9477 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">progressive.qa.test.home.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">10122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">retryTest</span>
+                <span class="method-start">13063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest())</span>
+                <span class="method-start">13063 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest status=SKIP method=AutoTestHashMapDataProvider.retryTest()[pri:0, instanc...)</span>
+                <span class="method-start">13065 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">13066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">13725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest())</span>
+                <span class="method-start">16860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">retryTest</span>
+                <span class="method-start">16861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest status=FAILURE method=AutoTestHashMapDataProvider.retryTest()[pri:0, inst...)</span>
+                <span class="method-start">16868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">17093 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">17740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2())</span>
+                <span class="method-start">20829 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">retryTest2</span>
+                <span class="method-start">20830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest2 status=SKIP method=AutoTestHashMapDataProvider.retryTest2()[pri:0, insta...)</span>
+                <span class="method-start">20836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">20837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">21493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">retryTest2</span>
+                <span class="method-start">25019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2())</span>
+                <span class="method-start">25019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">25021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest2 status=SKIP method=AutoTestHashMapDataProvider.retryTest2()[pri:0, insta...)</span>
+                <span class="method-start">25021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">25685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2())</span>
+                <span class="method-start">28615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">retryTest2</span>
+                <span class="method-start">28616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest2 status=SKIP method=AutoTestHashMapDataProvider.retryTest2()[pri:0, insta...)</span>
+                <span class="method-start">28618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">28619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">29279 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startReport(public void progresive.qa.test.auto.AutoTestHashMapDataProvider.retryTest2())</span>
+                <span class="method-start">32214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">retryTest2</span>
+                <span class="method-start">32215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=retryTest2 status=FAILURE method=AutoTestHashMapDataProvider.retryTest2()[pri:0, in...)</span>
+                <span class="method-start">32219 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleaningUp</span>
+                <span class="method-start">32463 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">83941 ms</span>
+                <span class="method-start">33174 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
